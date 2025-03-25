@@ -5,15 +5,6 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CounterPageComponent {
-  /**
-   *
-   */
-  constructor() {
-    setInterval(() => {
-      this.increaseBy(1);
-      console.log('tICK');
-    }, 2000);
-  }
   counter = 10;
   counterSignal = signal(10);
   increaseBy(value: number) {
